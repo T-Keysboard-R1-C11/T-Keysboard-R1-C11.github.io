@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ru" class="notranslate" translate="no">
 <head>
@@ -10,143 +9,21 @@
 
         <title>OlimpBet</title>
 
-        <link rel='manifest' href='/manifest.json'>
-        <link rel="apple-touch-icon" href="https://www.madnessreigns.xyz/img/gl/app/4956/icon.png?w=192&h=192&t=1685023806">
-        <link rel="apple-touch-icon" sizes="152x152" href="https://www.madnessreigns.xyz/img/gl/app/4956/icon.png?w=152&h=152&t=1685023806">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://www.madnessreigns.xyz/img/gl/app/4956/icon.png?w=180&h=180&t=1685023806">
-        <link rel="apple-touch-icon" sizes="167x167" href="https://www.madnessreigns.xyz/img/gl/app/4956/icon.png?w=167&h=167&t=1685023806">
 
-        <meta name="apple-mobile-web-app-title" content="Madness Reigns">
+        <meta name="apple-mobile-web-app-title" content="OlimpBet">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="theme-color" content="#000000">
 
         
-        <link rel="stylesheet" href="/pwa/css/pwa.css?id=688a3c134f503e7dc80d">
 
-        <script>
-            window.SETTINGS = {
-                appSWLastUpdate: '1685023806',
-                locale: 'ru',
-                
-                
-
-                deviceId: '4956_www_6475bb17485b5',
-                
-                
-
-
-                appNotificationDefaultUrl: 'https://www.madnessreigns.xyz/pwa.app',
-                pushService: {
-                    appId: 'e4f596ad-fa63-4984-93d4-338756a5b514',
-                    type: 'onesignal',
-                    subscribeRequestEnabled: false,
-                    subscribeRequestOptions: {
-                        icon: 'https://www.madnessreigns.xyz/storage/public/app/4956/icon.png?1685023806',
-                        actionMessage: '',
-                        acceptButton: '',
-                        cancelButton: ''
-                    },
-                    tags: {
-                        app_id: 4956,
-                    }
-                },
-            }
-        </script>
-                    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
-                <script src="/pwa/js/main.js?id=787b7cb7d92711960b05"></script>
+       
 
             
-    <script>
-        // document.addEventListener("DOMContentLoaded", function(event) {
-        //     PWAPlatform.goToAppIfInstalled();
-        // })
-    </script>
-
-    
-
-        <script
-    src="https://browser.sentry-cdn.com/7.53.1/bundle.min.js"
-    integrity="sha384-TAmKuSiw9ilvCDimDNU3n2p9B/TsFLCCBI3zYYxaAwv34hXzH8ghBq/M0SYU/eY9"
-    crossorigin="anonymous"
-></script>
-<script>
-    Sentry.init({
-        dsn: 'https://10cb99dd04764448908fcd64cb9ba61d@o370135.ingest.sentry.io/6093759',
-        environment: document.location.host,
-        release: 'app@v2.0.2'
-    });
-    Sentry.setUser({"id": window.SETTINGS ? window.SETTINGS.deviceId : ''});
-    Sentry.setContext("SETTINGS", window.SETTINGS || {});
-    if('plugins' in navigator && navigator.plugins.length > 0){
-        var pluginNames = [];
-        for(var i=0;i<navigator.plugins.length;i++){
-            pluginNames.push( navigator.plugins[i].name );
-        }
-        Sentry.setContext('BrowserPlugins', pluginNames);
-    }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </head>
     <body >
             
     <div class="landing-layout">
-        <script>
-    sessionStorage.inttoext = '1';
-    function startSession(){
-        PWAPlatform.makeSessionId().then(function(data){
-            if(data && data.app_url) document.location.href = data.app_url;
-        }).catch(console.log);
-    }
-
-    var checkRepeat = 0;
-    var maxCheckRepeats = 10;
-    function checkData(){
-        if(checkRepeat >= maxCheckRepeats) return;
-
-        checkRepeat++;
-        let fbp = PWAPlatform.getCookie('_fbp');
-        let fbc = PWAPlatform.getCookie('_fbc');
-
-        if(!fbp && !fbc){
-            return setTimeout(checkData, 300);
-        }
-
-        document.querySelector('#btnAppstore').click();
-    }
-
-    document.addEventListener("DOMContentLoaded", function(event) {
-        document.querySelector('#btnAppstore').addEventListener('click', function(){
-            console.log('onClick');
-            startSession();
-        })
-
-        if(window.pixelId) setTimeout(checkData, 300);
-    });
-
-</script>
+        
 
 <div style="
     width: 100vw; height: 100vh;
@@ -168,19 +45,7 @@
 
     </div>
     <a style="display: none" href="#" id="ext">show</a>
-    <script>
-        window.onPWAInstall = function(){
-            PWAPlatform.trackEvent('install');
-
-            
-            try{
-                
-            }catch(e){ console.error(e.message || e); }
-
-            // if(window.OpenReplay) OpenReplay.event('app_install');
-            console.log('onPWAInstall');
-        }
-    </script>
+    
 
             </body>
 </html>
